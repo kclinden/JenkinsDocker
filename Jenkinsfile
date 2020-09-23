@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Hello'){
             steps {
-                sh 'echo "Hello from Docker'
+                sh 'echo "Hello from Docker"'
                 sh 'hostname'
                 sh 'echo "This is some text in a file" > test.txt'
                 sh 'ls -lart'
