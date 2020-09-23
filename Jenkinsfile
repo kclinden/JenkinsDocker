@@ -11,7 +11,8 @@ pipeline {
             steps {
                 sh 'echo "Hello from Docker"'
                 sh 'hostname'
-                sh 'echo "This is some text in a file" > test.txt'
+                sh 'echo "This is some text in a file for build" > test.txt'
+                sh "echo ${BUILD_NUMBER} >> test.txt"
                 sh 'ls -lart'
             }
         }
