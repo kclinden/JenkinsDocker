@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Archive'){
             steps {
-                archiveArtifacts artifacts: './test.txt'
+                archiveArtifacts artifacts: 'test.txt'
             }
         }
     }
