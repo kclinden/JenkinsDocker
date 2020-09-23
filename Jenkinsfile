@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Hello'){
             steps {
-                sh 'echo "Hello from Docker'
+                sh 'echo "Hello from Docker"'
                 sh 'hostname'
             }
         }
