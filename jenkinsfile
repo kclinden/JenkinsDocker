@@ -2,14 +2,14 @@ pipeline {
     agent { label 'docker' }
 
     stages {
-        stage('Hello') {
+        stage('SCM') {
             steps {
                 git 'https://github.com/kclinden/jenkinsdocker'
             }
         }
-        stage('Test'){
+        stage('Hello'){
             steps {
-                sh 'echo "Hello World"'
+                sh 'echo "Hello from Docker'
                 sh 'hostname'
             }
         }
