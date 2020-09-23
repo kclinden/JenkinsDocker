@@ -13,7 +13,7 @@ pipeline {
                 sh 'hostname'
                 sh 'echo "This is some text in a file for build" > test.txt'
                 sh "echo ${BUILD_NUMBER} >> test.txt"
-                sh 'ls -lart'
+                sh 'ls -lart && pwd'
             }
         }
         stage('Archive'){
